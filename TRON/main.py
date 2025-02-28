@@ -9,7 +9,7 @@ HEIGHT = 900
  
 "sets width and height of the window as well as caption"   
 display = pygame.display.set_mode([WIDTH,HEIGHT])
-pygame.display.set_caption("Tron Simulator")
+pygame.display.set_caption("TRON Simulator")
 
 
 
@@ -19,9 +19,9 @@ cycleX = 400
 cycleY = 300
 
 score = 0
-speed = 15
+speed = 30
 
-FPS = 30
+FPS = 10
 
 headposition = (cycleX,cycleY,40,40)
 trailposition = (cycleX,cycleY,20,20)
@@ -60,7 +60,7 @@ while gameloop:
     cycleX = cycleX + cycle_dx
     cycleY = cycleY + cycle_dy
     headposition = (cycleX,cycleY,40,40)
-    trailposition = (cycleX+10,cycleY+10,20,20)
+    trailposition = (cycleX+5,cycleY+5,30,30)
      
     "constantly create squares behind the lightcycle to make the 'trail' effect"
     trail.append(trailposition)
