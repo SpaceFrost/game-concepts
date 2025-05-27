@@ -9,7 +9,3 @@ class Bricks(pygame.sprite.Sprite):
         brick_colors = ["red", "blue", "yellow", "green"]
         self.color = random.choice(brick_colors)
         self.rect = pygame.Rect(x,y,80,20)
-
-    
-    def draw(self,screen):
-        pygame.draw.rect(screen, self.color, self.rect)
