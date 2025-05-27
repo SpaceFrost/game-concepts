@@ -18,8 +18,6 @@ y = 0
 brick_group = pygame.sprite.Group()
 paddle = Paddle()
 ball = Ball()
-brick = Bricks(x,y)
-brick_group.add(Bricks)
 
 FPS = 20
 
@@ -34,6 +32,8 @@ for row in range(row):
     for col in range(col):
         x = startx + col * spacex
         y = starty + row * spacey
+        brick = Bricks(x,y)
+        brick_group.add(brick)
         
 
 "starts gameloop"
